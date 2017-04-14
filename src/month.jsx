@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import Week from './week'
 
@@ -8,28 +9,28 @@ var Month = React.createClass({
   displayName: 'Month',
 
   propTypes: {
-    day: React.PropTypes.object.isRequired,
-    endDate: React.PropTypes.object,
-    excludeDates: React.PropTypes.array,
-    filterDate: React.PropTypes.func,
-    fixedHeight: React.PropTypes.bool,
-    highlightDates: React.PropTypes.array,
-    includeDates: React.PropTypes.array,
-    inline: React.PropTypes.bool,
-    maxDate: React.PropTypes.object,
-    minDate: React.PropTypes.object,
-    onDayClick: React.PropTypes.func,
-    onDayMouseEnter: React.PropTypes.func,
-    onMouseLeave: React.PropTypes.func,
-    peekNextMonth: React.PropTypes.bool,
-    preSelection: React.PropTypes.object,
-    selected: React.PropTypes.object,
-    selectingDate: React.PropTypes.object,
-    selectsEnd: React.PropTypes.bool,
-    selectsStart: React.PropTypes.bool,
-    showWeekNumbers: React.PropTypes.bool,
-    startDate: React.PropTypes.object,
-    utcOffset: React.PropTypes.number
+    day: PropTypes.object.isRequired,
+    endDate: PropTypes.object,
+    excludeDates: PropTypes.array,
+    filterDate: PropTypes.func,
+    fixedHeight: PropTypes.bool,
+    highlightDates: PropTypes.array,
+    includeDates: PropTypes.array,
+    inline: PropTypes.bool,
+    maxDate: PropTypes.object,
+    minDate: PropTypes.object,
+    onDayClick: PropTypes.func,
+    onDayMouseEnter: PropTypes.func,
+    onMouseLeave: PropTypes.func,
+    peekNextMonth: PropTypes.bool,
+    preSelection: PropTypes.object,
+    selected: PropTypes.object,
+    selectingDate: PropTypes.object,
+    selectsEnd: PropTypes.bool,
+    selectsStart: PropTypes.bool,
+    showWeekNumbers: PropTypes.bool,
+    startDate: PropTypes.object,
+    utcOffset: PropTypes.number
   },
 
   handleDayClick (day, event) {

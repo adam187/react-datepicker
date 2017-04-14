@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import MonthDropdownOptions from './month_dropdown_options'
 import onClickOutside from 'react-onclickoutside'
 import moment from 'moment'
@@ -9,10 +10,10 @@ var MonthDropdown = React.createClass({
   displayName: 'MonthDropdown',
 
   propTypes: {
-    dropdownMode: React.PropTypes.oneOf(['scroll', 'select']).isRequired,
-    locale: React.PropTypes.string,
-    month: React.PropTypes.number.isRequired,
-    onChange: React.PropTypes.func.isRequired
+    dropdownMode: PropTypes.oneOf(['scroll', 'select']).isRequired,
+    locale: PropTypes.string,
+    month: PropTypes.number.isRequired,
+    onChange: PropTypes.func.isRequired
   },
 
   getInitialState () {

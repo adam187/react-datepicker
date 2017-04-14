@@ -1,5 +1,6 @@
 import moment from 'moment'
 import React from 'react'
+import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { isSameDay, isDayDisabled, isDayInRange } from './date_utils'
 
@@ -7,20 +8,20 @@ var Day = React.createClass({
   displayName: 'Day',
 
   propTypes: {
-    day: React.PropTypes.object.isRequired,
-    endDate: React.PropTypes.object,
-    highlightDates: React.PropTypes.array,
-    inline: React.PropTypes.bool,
-    month: React.PropTypes.number,
-    onClick: React.PropTypes.func,
-    onMouseEnter: React.PropTypes.func,
-    preSelection: React.PropTypes.object,
-    selected: React.PropTypes.object,
-    selectingDate: React.PropTypes.object,
-    selectsEnd: React.PropTypes.bool,
-    selectsStart: React.PropTypes.bool,
-    startDate: React.PropTypes.object,
-    utcOffset: React.PropTypes.number
+    day: PropTypes.object.isRequired,
+    endDate: PropTypes.object,
+    highlightDates: PropTypes.array,
+    inline: PropTypes.bool,
+    month: PropTypes.number,
+    onClick: PropTypes.func,
+    onMouseEnter: PropTypes.func,
+    preSelection: PropTypes.object,
+    selected: PropTypes.object,
+    selectingDate: PropTypes.object,
+    selectsEnd: PropTypes.bool,
+    selectsStart: PropTypes.bool,
+    startDate: PropTypes.object,
+    utcOffset: PropTypes.number
   },
   getDefaultProps () {
     return {
