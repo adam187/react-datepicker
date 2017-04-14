@@ -3,6 +3,7 @@ import YearDropdown from './year_dropdown'
 import MonthDropdown from './month_dropdown'
 import Month from './month'
 import React from 'react'
+import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { isSameDay, allDaysDisabledBefore, allDaysDisabledAfter, getEffectiveMinDate, getEffectiveMaxDate } from './date_utils'
@@ -17,7 +18,7 @@ const isDropdownSelect = (element = {}) => {
   return DROPDOWN_FOCUS_CLASSNAMES.some(testClassname => classNames.indexOf(testClassname) >= 0)
 }
 
-var Calendar = React.createClass({
+var Calendar = createClass({
   displayName: 'Calendar',
 
   propTypes: {

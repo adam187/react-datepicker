@@ -1,7 +1,8 @@
 import React from 'react'
+import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 
-var MonthDropdownOptions = React.createClass({
+var MonthDropdownOptions = createClass({
   displayName: 'MonthDropdownOptions',
 
   propTypes: {

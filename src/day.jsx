@@ -1,10 +1,11 @@
 import moment from 'moment'
 import React from 'react'
+import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import { isSameDay, isDayDisabled, isDayInRange } from './date_utils'
 
-var Day = React.createClass({
+var Day = createClass({
   displayName: 'Day',
 
   propTypes: {

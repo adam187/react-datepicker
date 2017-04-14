@@ -1,5 +1,6 @@
 import Calendar from './calendar'
 import React from 'react'
+import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 import TetherComponent from './tether_component'
 import classnames from 'classnames'
@@ -14,7 +15,7 @@ var WrappedCalendar = onClickOutside(Calendar)
  * General datepicker component.
  */
 
-var DatePicker = React.createClass({
+var DatePicker = createClass({
   displayName: 'DatePicker',
 
   propTypes: {

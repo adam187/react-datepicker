@@ -1,11 +1,12 @@
 import React from 'react'
+import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import Week from './week'
 
 const FIXED_HEIGHT_STANDARD_WEEK_COUNT = 6
 
-var Month = React.createClass({
+var Month = createClass({
   displayName: 'Month',
 
   propTypes: {

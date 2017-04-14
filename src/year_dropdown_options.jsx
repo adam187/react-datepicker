@@ -1,4 +1,5 @@
 import React from 'react'
+import createClass from 'create-react-class'
 import classNames from 'classnames'
 
 function generateYears (year, noOfYear) {
@@ -9,7 +10,7 @@ function generateYears (year, noOfYear) {
   return list
 }
 
-var YearDropdownOptions = React.createClass({
+var YearDropdownOptions = createClass({
   displayName: 'YearDropdownOptions',
 
   propTypes: {

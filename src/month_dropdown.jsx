@@ -1,4 +1,5 @@
 import React from 'react'
+import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 import MonthDropdownOptions from './month_dropdown_options'
 import onClickOutside from 'react-onclickoutside'
@@ -6,7 +7,7 @@ import moment from 'moment'
 
 var WrappedMonthDropdownOptions = onClickOutside(MonthDropdownOptions)
 
-var MonthDropdown = React.createClass({
+var MonthDropdown = createClass({
   displayName: 'MonthDropdown',
 
   propTypes: {

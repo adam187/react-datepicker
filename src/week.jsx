@@ -1,9 +1,10 @@
 import React from 'react'
+import createClass from 'create-react-class'
 import PropTypes from 'prop-types'
 import Day from './day'
 import WeekNumber from './week_number'
 
-var Week = React.createClass({
+var Week = createClass({
   displayName: 'Week',
 
   propTypes: {
