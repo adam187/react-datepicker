@@ -1,10 +1,12 @@
 import React from 'react'
+import createClass from 'create-react-class'
+import PropTypes from 'prop-types'
 
-var WeekNumber = React.createClass({
+var WeekNumber = createClass({
   displayName: 'WeekNumber',
 
   propTypes: {
-    weekNumber: React.PropTypes.number.isRequired
+    weekNumber: PropTypes.number.isRequired
   },
 
   render () {

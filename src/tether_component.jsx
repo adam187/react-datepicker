@@ -1,4 +1,6 @@
-import React, { Children, PropTypes } from 'react'
+import { Children } from 'react'
+import createClass from 'create-react-class'
+import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
 import Tether from 'tether'
 
@@ -23,7 +25,7 @@ const attachmentPositions = [
   'bottom right'
 ]
 
-var TetherComponent = React.createClass({
+var TetherComponent = createClass({
   displayName: 'TetherComponent',
 
   propTypes: {
